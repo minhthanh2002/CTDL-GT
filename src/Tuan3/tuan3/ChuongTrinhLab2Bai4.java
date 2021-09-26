@@ -53,16 +53,27 @@ public class ChuongTrinhLab2Bai4 {
          // ax2 + bx +c = 0
         float a, b, c;
         Scanner bienNhap = new Scanner(System.in);
-        do {
-            System.out.print("Nhap a khac 0: ");
-            a = bienNhap.nextFloat();
-        } while (a == 0);
+        
+        System.out.print("Nhap a: ");
+        a = bienNhap.nextFloat();
         System.out.print("Nhap b: ");
         b = bienNhap.nextFloat();
         System.out.print("Nhap c: ");
         c = bienNhap.nextFloat();
-
-        float delta = b * b - 4 * a * c;
+        if (a==0){
+            //giai ptrinh bac 1 
+        } if (b==0){
+            if(c==0){
+                System.out.println("Phuong trinh vo so nghiem");
+            }else{
+                System.out.println("Phuong trinh vo nghiem:");
+            }
+        
+        }else{
+                System.out.println("Phuong trinh co nghiem x=" + -b/c);
+            }
+            //phuong trinh bac 2
+            float delta = b * b - 4 * a * c;
         if (delta < 0) {
             System.out.println("PT vo nghiem!");
         } else if (delta == 0) {
@@ -75,32 +86,16 @@ public class ChuongTrinhLab2Bai4 {
     }
  
      static void tinhTienDien() {
-         System.out.println("Triển khai code tính tiền điện");
-         // Bậc 1: Cho kWh từ 0 - 50 1.678
-        // Bậc 2: Cho kWh từ 51 - 100 1.734
-        // Bậc 3: Cho kWh từ 101 - 200 2.014
-        // Bậc 4: Cho kWh từ 201 - 300 2.536
-        // Bậc 5: Cho kWh từ 301 - 400 2.834
-        // Bậc 6: Cho kWh từ 401 trở lên 2.900
-        System.out.println("Nhap So Kw dien nang tieu thu: ");
+        System.out.println("Nhap so dien tieu thu:");
+        float soDien;
         Scanner sc = new Scanner(System.in);
-        float soKw = sc.nextFloat();
+        soDien = sc.nextFloat();
 
-        float tongTien;
-        if (soKw <= 50) {
-            tongTien = soKw * 1678;
-        } else if (soKw <= 100) {
-            tongTien = 50 * 1678 + (soKw - 50) * 1734;
-        } else if (soKw <= 200) {
-            tongTien = 50 * 1678 + 50 * 1734 + (soKw - 100) * 2014;
-        } else if (soKw <= 300) {
-            tongTien = 50 * 1678 + 50 * 1734 + 100 * 2014 + (soKw - 200) * 2536;
-        } else if (soKw <= 400) {
-            tongTien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (soKw - 300) * 2834;
-        } else {
-            tongTien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (soKw - 400) * 2900;
+        if (soDien <=50){
+            System.out.println("So tien phai tra:" + soDien * 1000);
+        }else if (soDien > 50){
+            System.out.println( "So tien phai tra:" + 50 * 1000 + (soDien- 50) * 1200);
+
         }
-        System.out.println("So tien dien phai tra la: " + tongTien);
     }
- 
- } 
+}
