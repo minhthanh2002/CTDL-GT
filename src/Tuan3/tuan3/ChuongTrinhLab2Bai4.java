@@ -47,6 +47,7 @@ public class ChuongTrinhLab2Bai4 {
              System.out.println("PT co nghiem: " + (-b/a));
          }
      }
+     
      static void giaiPTBac2() {
          System.out.println("Trien khai code giải ptrinh bậc 2");
          // ax2 + bx +c = 0
