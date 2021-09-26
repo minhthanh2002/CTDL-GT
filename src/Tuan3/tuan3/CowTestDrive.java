@@ -14,7 +14,7 @@ public static void main(String[] args){
 
     cow = new Cow(25.5, "Tây Ban Nha", "Đen");
 
-    System.out.println("weight:" + cow.weight + "breed" + cow.breed + "color" + cow.color );
+    System.out.println("weight:" + cow.weight + "breed:" + cow.breed + "color:" + cow.color );
 
 }
     
