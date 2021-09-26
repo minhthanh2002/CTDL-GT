@@ -15,7 +15,7 @@ public class Bai3Lab1 {
         System.out.println("Nhap c:");
         c = bienNhap.nextFloat();
         float delta = (b*b) - 4*a*c;
-        System.out.println("Can bac 2 cua delta =" +  delta );
+        System.out.println("Can bac 2 cua delta =" +  Math.sqrt(delta) );
         
         
     }
