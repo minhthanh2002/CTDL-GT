@@ -1,4 +1,4 @@
-package Tuan3.tuan3;
+package vn.edu.giadinh.tuan3;
 import java.util.Scanner;
 public class Bai1Lab3 {
     public static void main(String[] args) {

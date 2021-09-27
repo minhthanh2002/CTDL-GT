@@ -1,4 +1,4 @@
-package Tuan3.tuan3;
+package vn.edu.giadinh.tuan3;
 
 public class Bai2Lab3 {
     public static void main(String[] args) {
