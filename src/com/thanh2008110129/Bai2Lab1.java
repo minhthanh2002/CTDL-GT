@@ -1,8 +1,6 @@
-package c;
-
+package com.thanh2008110129;
 import java.util.Scanner;
-
-public class Bai1Lab2 {
+public class Bai2Lab1 {
     public static void main(String[] args) {
         System.out.println("Giai ptrinh bac nhat:");
         float a,b;
@@ -29,3 +27,5 @@ public class Bai1Lab2 {
     
     
 }
+
+
